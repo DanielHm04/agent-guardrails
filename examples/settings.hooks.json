@@ -1,0 +1,22 @@
+{
+  "_comment": "Minimal example: how to register the two PreToolUse guard hooks in a Claude Code settings.json. Point the paths at wherever you install the .mjs files, and keep the rest of your own settings. Node 22+ is required.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"<your-claude-config-dir>/hooks/guard.mjs\"",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "node \"<your-claude-config-dir>/hooks/secrets-guard.mjs\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

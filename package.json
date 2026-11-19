@@ -1,0 +1,14 @@
+{
+  "name": "agent-guardrails",
+  "version": "1.0.0",
+  "description": "Dependency-free PreToolUse guard hooks for AI coding agents (Claude Code).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Daniel Homitchi",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
